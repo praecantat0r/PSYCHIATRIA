@@ -190,16 +190,11 @@ body::after {
 @media (min-width: 1024px) { .header__inner { padding: 0.8rem 2.5rem; } }
 
 .header__brand { display: flex; align-items: center; gap: 0.8rem; text-decoration: none; min-width: 0; }
-.header__badge {
-  display: flex; align-items: center; justify-content: center;
-  width: 2.4rem; height: 2.4rem;
-  border-radius: 50%;
-  background: var(--lime-300);
-  color: var(--forest-900);
-  font-family: var(--serif);
-  font-size: 0.85rem;
+.header__logo {
   flex-shrink: 0;
+  transition: transform 400ms var(--ease);
 }
+.header__brand:hover .header__logo { transform: rotate(-8deg); }
 .header__brand-text { line-height: 1.25; min-width: 0; }
 .header__name {
   display: block;
@@ -357,35 +352,34 @@ body::after {
   background: var(--lime-300);
 }
 
-/* ════════════════ TICKER ════════════════ */
+/* ════════════════ TICKER — quiet, slow strip ════════════════ */
 .ticker {
-  background: var(--lime-300);
-  color: var(--forest-900);
+  background: var(--forest-900);
+  color: rgba(231, 243, 218, 0.66);
   overflow: hidden;
-  padding: 1rem 0;
-  transform: rotate(-1.2deg) scale(1.02);
+  padding: 0.8rem 0;
   position: relative;
-  z-index: 5;
-  margin-top: -1.4rem;
-  box-shadow: 0 14px 40px -18px rgba(8, 37, 26, 0.5);
+  border-top: 1px solid rgba(200, 233, 106, 0.14);
+  border-bottom: 1px solid rgba(200, 233, 106, 0.14);
 }
 .ticker__track {
   display: flex;
   width: max-content;
-  animation: ticker-scroll 38s linear infinite;
+  animation: ticker-scroll 90s linear infinite;
 }
 .ticker__group { display: flex; }
 .ticker__item {
   display: inline-flex;
   align-items: center;
-  gap: 1.6rem;
-  padding-right: 1.6rem;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.05rem;
+  gap: 2.4rem;
+  padding-right: 2.4rem;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
   white-space: nowrap;
 }
-.ticker__leaf { opacity: 0.55; }
+.ticker__leaf { opacity: 0.3; width: 10px; height: 10px; color: var(--lime-300); }
 @keyframes ticker-scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
@@ -577,36 +571,6 @@ body::after {
   color: var(--leaf-600);
   margin-top: 0.3rem;
 }
-
-/* ════════════════ PHOTO BREAK ════════════════ */
-.photobreak {
-  position: relative;
-  height: 26rem;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media (min-width: 1024px) { .photobreak { height: 34rem; } }
-.photobreak__img { position: absolute; inset: -15% 0; }
-.photobreak__img img { width: 100%; height: 100%; object-fit: cover; }
-.photobreak__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(8, 37, 26, 0.5);
-}
-.photobreak__quote {
-  position: relative;
-  z-index: 2;
-  font-family: var(--serif);
-  font-weight: 300;
-  font-size: clamp(1.8rem, 4.5vw, 3.2rem);
-  line-height: 1.25;
-  text-align: center;
-  color: var(--mist);
-  padding: 0 1.5rem;
-}
-.photobreak__quote em { font-style: italic; color: var(--lime-300); }
 
 /* ════════════════ SERVICES ════════════════ */
 .services { background: var(--mint-50); }

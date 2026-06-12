@@ -6,7 +6,6 @@ import Ticker from './components/Ticker.jsx'
 import About from './components/About.jsx'
 import Values from './components/Values.jsx'
 import Team from './components/Team.jsx'
-import PhotoBreak from './components/PhotoBreak.jsx'
 import Services from './components/Services.jsx'
 import Gallery from './components/Gallery.jsx'
 import Career from './components/Career.jsx'
@@ -26,7 +25,6 @@ export default function App() {
         <About />
         <Values />
         <Team />
-        <PhotoBreak />
         <Services />
         <Gallery />
         <Career />

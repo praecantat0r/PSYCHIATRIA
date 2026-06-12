@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import Logo from './Logo.jsx'
 
 const LINKS = [
   ['#o-nas', 'O nás'],
@@ -23,7 +24,7 @@ export default function Header() {
     <header className={`header ${solid || open ? 'header--solid' : ''}`}>
       <div className="header__inner">
         <a href="#hero" className="header__brand" onClick={() => setOpen(false)}>
-          <span className="header__badge">CV</span>
+          <Logo />
           <span className="header__brand-text">
             <span className="header__name">Centrum u Velických</span>
             <span className="header__tag">Psychiatria &amp; Psychoterapia</span>
