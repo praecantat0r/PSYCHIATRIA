@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Start-Process \"c:\\\\Users\\\\42191\\\\Documents\\\\Websites\\\\PSYCHIATRIA\\\\index.html\")"
+    ]
+  }
+}
