@@ -3,21 +3,21 @@
    ════════════════════════════════════════════════════════ */
 
 :root {
-  /* palette — creamy orange, light and warm */
-  --clove-950: #9e4008;
-  --clove-900: #b85214;
-  --clove-800: #cc6820;
-  --rust-700: #d97828;
-  --orange-600: #e88830;
-  --orange-500: #f59a42;
-  --amber-400: #f9ad5a;
-  --marigold-300: #ffc170;
-  --marigold-200: #ffd494;
-  --cream-100: #fdebd6;
-  --cream-50:  #fef7ed;
-  --porcelain: #fffcf7;
-  --ink: #2c1206;
-  --ink-soft: #7a4020;
+  /* palette — muted terracotta, calm and warm */
+  --clove-950: #5a2e18;
+  --clove-900: #7a4228;
+  --clove-800: #9a5a3a;
+  --rust-700: #b07250;
+  --orange-600: #c28460;
+  --orange-500: #d09672;
+  --amber-400: #d8a882;
+  --marigold-300: #ddb890;
+  --marigold-200: #e8cdb0;
+  --cream-100: #f2e2d0;
+  --cream-50:  #f9f0e6;
+  --porcelain: #fdfaf5;
+  --ink: #2a1808;
+  --ink-soft: #6a3c22;
 
   --serif: 'Fraunces', Georgia, serif;
   --sans: 'Work Sans', system-ui, sans-serif;
