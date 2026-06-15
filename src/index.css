@@ -1391,3 +1391,68 @@ body::after {
   padding: 5rem 0 6rem;
   margin-top: 2rem;
 }
+
+/* ════════════════ BLOG MOBILE ════════════════ */
+@media (max-width: 640px) {
+  .blog-list-hero {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .blog-featured {
+    gap: 1.8rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .blog-featured__img {
+    border-radius: 1.2rem;
+  }
+  .blog-featured__title {
+    font-size: 1.65rem;
+  }
+
+  .blog-card {
+    border-radius: 1.2rem;
+  }
+  .blog-card__body {
+    padding: 1.2rem 1.3rem 1.5rem;
+  }
+
+  .post-hero {
+    height: 60vh;
+    min-height: 22rem;
+  }
+  .post-hero__content {
+    padding-bottom: 2rem;
+  }
+  .post-hero__title {
+    font-size: 1.8rem;
+  }
+  .post-hero__subtitle {
+    font-size: 1rem;
+  }
+  .post-hero__meta {
+    font-size: 0.72rem;
+  }
+
+  .post-body {
+    padding: 2.5rem 0 2rem;
+  }
+  .post-section__p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .post-author {
+    padding: 1.4rem 1.2rem;
+    gap: 1rem;
+  }
+
+  .post-cta {
+    padding: 2.5rem 1.5rem;
+    border-radius: 1.2rem;
+  }
+
+  .post-more {
+    padding: 3rem 0 4rem;
+  }
+}
