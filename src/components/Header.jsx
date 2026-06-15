@@ -68,7 +68,7 @@ export default function Header() {
           </Link>
         </nav>
 
-        <a href="mailto:info@centrumuvelickych.sk" className="btn btn--solid header__cta">
+        <a href="#kontakt" className="btn btn--solid header__cta">
           Napísať email
         </a>
 
@@ -115,7 +115,7 @@ export default function Header() {
                 Blog
               </Link>
               <a
-                href="mailto:info@centrumuvelickych.sk"
+                href="#kontakt"
                 className="btn btn--solid"
                 onClick={() => setOpen(false)}
               >

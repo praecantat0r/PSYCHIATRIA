@@ -133,7 +133,7 @@ export default function BlogPost() {
               <p style={{ color: 'var(--ink-soft)', fontWeight: 300, marginBottom: '2rem', lineHeight: 1.7 }}>
                 Ak sa Vás téma tohto článku osobne dotýka alebo hľadáte odbornú pomoc, sme tu pre Vás.
               </p>
-              <a href="mailto:info@centrumuvelickych.sk" className="btn btn--solid">
+              <a href="/#kontakt" className="btn btn--solid">
                 Napísať email
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </a>
