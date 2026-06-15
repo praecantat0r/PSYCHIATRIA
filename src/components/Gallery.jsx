@@ -18,7 +18,7 @@ export default function Gallery() {
           <p className="eyebrow">Prostredie</p>
           <h2 className="h2">Náš <em>priestor</em></h2>
           <p className="gallery__lead">
-            Prostredie, v ktorom sa rozpráva ľahšie. Teplo, denné svetlo a ticho.
+            Útulňujú ho deň čo deň naše sestričky.
           </p>
         </Reveal>
 

@@ -2,12 +2,11 @@ import { motion } from 'framer-motion'
 import Reveal from './Reveal.jsx'
 
 const SERVICES = [
-  'Psychiatrické vyšetrenie',
   'Liečba úzkosti a depresie',
   'Poruchy spánku',
-  'Individuálna psychoterapia',
-  'Krízová intervencia',
-  'Kontrolné vyšetrenia',
+  'Psychoterapeutické zameranie pri kontrolách',
+  'Krízová intervencia pri zhoršení psychického stavu pacientov',
+  'Telefonické konzultácie so sestričkami',
 ]
 
 export default function Services() {

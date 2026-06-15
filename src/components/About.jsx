@@ -35,18 +35,20 @@ export default function About() {
           <Reveal>
             <p className="eyebrow">O ambulancii</p>
             <h2 className="h2">
-              Odborná starostlivosť<br /><em>s ľudskou tvárou</em>
+              Starostlivosť s rešpektom<br /><em>ku jedinečnosti.</em>
             </h2>
           </Reveal>
           <Reveal delay={0.12}>
             <p className="about__text">
-              Centrum u Velických pôsobí v Banskej Bystrici od roku 2013. Venujeme sa
-              psychiatrickej diagnostike, liečbe a psychoterapii dospelých – s dôrazom
-              na diskrétnosť, pokoj a individuálny prístup ku každému človeku.
+              Venujeme sa psychiatrickej starostlivosti so zohľadnením jedinečného
+              životného príbehu nášho pacienta. Každý človek prichádza s vlastnou
+              históriou, tempom a potrebami – a práve z toho vychádzame pri každom
+              stretnutí.
             </p>
             <p className="about__text">
-              Veríme, že prostredie lieči. Preto je u nás viac tepla než chrómu
-              a viac času než zhonu.
+              Centrum u Velických pôsobí v Banskej Bystrici od roku 2013. Spája nás
+              spoločný záväzok: byť tu pre vás bez predsudkov, s odbornosťou
+              a s pochopením.
             </p>
           </Reveal>
           <Reveal delay={0.2}>

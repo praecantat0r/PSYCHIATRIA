@@ -9,8 +9,9 @@ export default function Career() {
           <p className="eyebrow eyebrow--dark">Aktuálne</p>
           <h3>Momentálne nepreberáme nových pacientov</h3>
           <p>
-            Kapacita ambulancie je naplnená. Existujúcich pacientov prosíme,
-            aby nás kontaktovali emailom – ozveme sa čo najskôr.
+            Nových pacientov sme schopní prijímať len na uvoľnené termíny po odhlásení
+            z kontroly našich súčasných pacientov. Keďže sme kapacitne naplnení, vyžaduje
+            to Vašu schopnosť prispôsobiť sa a flexibilitu pri objednávaní.
           </p>
         </Reveal>
 
