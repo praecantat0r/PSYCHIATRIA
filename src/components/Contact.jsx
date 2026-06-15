@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="container">
 
         <Reveal>
-          <p className="eyebrow eyebrow--lime">Kontakt</p>
+          <p className="eyebrow eyebrow--accent">Kontakt</p>
           <h2 className="h2 h2--light">Napíšte <em>nám</em></h2>
         </Reveal>
 

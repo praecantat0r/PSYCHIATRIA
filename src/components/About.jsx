@@ -16,7 +16,7 @@ export default function About() {
           <div className="about__photo-float">
             <img
               src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=600&q=80"
-              alt="Rastliny v interiéri"
+              alt="Detail pokojného interiéru"
             />
           </div>
           <motion.div
@@ -45,7 +45,7 @@ export default function About() {
               na diskrétnosť, pokoj a individuálny prístup ku každému človeku.
             </p>
             <p className="about__text">
-              Veríme, že prostredie lieči. Preto je u nás viac zelene než chrómu
+              Veríme, že prostredie lieči. Preto je u nás viac tepla než chrómu
               a viac času než zhonu.
             </p>
           </Reveal>

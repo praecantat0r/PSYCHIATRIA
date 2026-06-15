@@ -13,8 +13,8 @@ export default function Ticker() {
             {row.map((item, i) => (
               <span className="ticker__item" key={i}>
                 {item}
-                <svg className="ticker__leaf" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C7 7 4 11 4 15a8 8 0 0 0 16 0c0-4-3-8-8-13Z" />
+                <svg className="ticker__mark" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3.5 20.5 12 12 20.5 3.5 12 12 3.5Z" />
                 </svg>
               </span>
             ))}

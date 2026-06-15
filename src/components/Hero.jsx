@@ -18,8 +18,8 @@ export default function Hero({ animate }) {
     <section id="hero" className="hero" ref={ref}>
       <motion.div className="hero__photo" style={{ y }}>
         <img
-          src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1800&q=80"
-          alt="Zelené rastliny v presvetlenom priestore"
+          src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1800&q=80"
+          alt="Teplý, presvetlený interiér ambulancie"
           loading="eager"
           fetchPriority="high"
         />
@@ -38,7 +38,7 @@ export default function Hero({ animate }) {
             O duševné zdravie dospelých sa staráme od roku 2013.
           </motion.p>
           <motion.div {...up(0.6)}>
-            <a href="mailto:info@centrumuvelickych.sk" className="btn btn--lime hero__cta">
+            <a href="mailto:info@centrumuvelickych.sk" className="btn btn--accent hero__cta">
               Napísať email
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </a>

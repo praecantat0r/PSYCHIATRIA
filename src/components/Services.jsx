@@ -18,7 +18,7 @@ export default function Services() {
         <Reveal className="services__photo">
           <img
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80"
-            alt="Zelený, presvetlený priestor ambulancie"
+            alt="Teplý, presvetlený priestor ambulancie"
             loading="lazy"
           />
         </Reveal>
