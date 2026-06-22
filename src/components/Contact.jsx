@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { useForm, ValidationError } from '@formspree/react'
 import Reveal from './Reveal.jsx'
 
 const reasons = [
@@ -9,12 +8,36 @@ const reasons = [
 ]
 
 export default function Contact() {
-  const [state, handleSubmit] = useForm('xqeogdak')
+  const [fields, setFields] = useState({ name: '', phone: '', email: '', message: '' })
   const [reason, setReason] = useState('')
+  const [sent, setSent] = useState(false)
 
   const toggleReason = (val) => setReason((r) => (r === val ? '' : val))
+  const set = (key) => (e) => setFields((f) => ({ ...f, [key]: e.target.value }))
 
-  if (state.succeeded) {
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    const subject = encodeURIComponent(
+      `Kontaktný formulár${reason ? ` – ${reason}` : ''} – ${fields.name}`
+    )
+
+    const body = encodeURIComponent(
+      [
+        `Meno: ${fields.name}`,
+        `Telefón: ${fields.phone || '—'}`,
+        `Email: ${fields.email}`,
+        `Dôvod: ${reason || '—'}`,
+        '',
+        fields.message,
+      ].join('\n')
+    )
+
+    window.location.href = `mailto:psychiatriavelicki@gmail.com?subject=${subject}&body=${body}`
+    setSent(true)
+  }
+
+  if (sent) {
     return (
       <section id="kontakt" className="section contact">
         <div className="container">
@@ -25,8 +48,8 @@ export default function Contact() {
           <Reveal delay={0.1}>
             <div className="contact__success">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              <h3>Správa odoslaná</h3>
-              <p>Ďakujeme za Vašu správu. Ozveme sa Vám čo najskôr.</p>
+              <h3>Emailový klient otvorený</h3>
+              <p>Správa je pripravená vo Vašom emailovom klientovi. Stačí ju odoslať.</p>
             </div>
           </Reveal>
         </div>
@@ -70,21 +93,18 @@ export default function Contact() {
             <div className="contact__form-row">
               <div className="contact__field">
                 <label htmlFor="cf-name">Meno a priezvisko</label>
-                <input id="cf-name" type="text" name="name" placeholder="Ján Novák" required />
-                <ValidationError field="name" errors={state.errors} className="contact__field-error" />
+                <input id="cf-name" type="text" placeholder="Ján Novák" required value={fields.name} onChange={set('name')} />
               </div>
               <div className="contact__field">
                 <label htmlFor="cf-phone">Telefónne číslo</label>
-                <input id="cf-phone" type="tel" name="phone" placeholder="+421 9XX XXX XXX" />
-                <ValidationError field="phone" errors={state.errors} className="contact__field-error" />
+                <input id="cf-phone" type="tel" placeholder="+421 9XX XXX XXX" value={fields.phone} onChange={set('phone')} />
               </div>
             </div>
 
             <div className="contact__form-row">
               <div className="contact__field">
                 <label htmlFor="cf-email">Email</label>
-                <input id="cf-email" type="email" name="email" placeholder="jan@email.sk" required />
-                <ValidationError field="email" errors={state.errors} className="contact__field-error" />
+                <input id="cf-email" type="email" placeholder="jan@email.sk" required value={fields.email} onChange={set('email')} />
               </div>
             </div>
 
@@ -102,21 +122,16 @@ export default function Contact() {
                   </button>
                 ))}
               </div>
-              {/* hidden input so Formspree receives the reason value */}
-              <input type="hidden" name="reason" value={reason} />
             </div>
 
             <div className="contact__field">
               <label htmlFor="cf-message">Správa</label>
-              <textarea id="cf-message" name="message" placeholder="Popíšte, s čím Vám môžeme pomôcť…" required />
-              <ValidationError field="message" errors={state.errors} className="contact__field-error" />
+              <textarea id="cf-message" placeholder="Popíšte, s čím Vám môžeme pomôcť…" required value={fields.message} onChange={set('message')} />
             </div>
 
-            <button type="submit" className="contact__submit" disabled={state.submitting}>
-              {state.submitting ? 'Odosielam…' : 'Odoslať správu'}
-              {!state.submitting && (
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-              )}
+            <button type="submit" className="contact__submit">
+              Odoslať správu
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </button>
           </form>
         </Reveal>
