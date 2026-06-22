@@ -727,6 +727,13 @@ body::after {
   background-image: radial-gradient(ellipse 70% 50% at 85% 0%, rgba(238, 127, 37, 0.18), transparent);
   color: var(--porcelain);
 }
+.contact__intro {
+  margin-top: 0.75rem;
+  color: rgba(255, 248, 239, 0.65);
+  font-size: 1.05rem;
+  max-width: 52ch;
+}
+
 .contact__layout {
   display: grid;
   gap: 3rem;
@@ -937,6 +944,58 @@ body::after {
   transform: translateY(-2px);
 }
 
+/* ════════════════ QUOTE ════════════════ */
+.quote-section {
+  position: relative;
+  overflow: hidden;
+  height: clamp(320px, 50vh, 520px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quote-section__bg {
+  position: absolute;
+  inset: -12% 0;
+  will-change: transform;
+}
+.quote-section__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.quote-section__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(26, 14, 6, 0.52), rgba(26, 14, 6, 0.68));
+}
+.quote-section__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+.quote-section__content blockquote {
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--cream-50);
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto;
+  letter-spacing: 0.01em;
+}
+.quote-section__mark {
+  display: block;
+  font-size: 4rem;
+  line-height: 0.6;
+  color: var(--marigold-300);
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+  font-style: normal;
+}
+
 /* ════════════════ FOOTER ════════════════ */
 .footer {
   background: var(--clove-950);
@@ -976,6 +1035,7 @@ body::after {
 .footer__legal a { color: rgba(255, 248, 239, 0.72); text-decoration: none; }
 .footer__legal a:hover { color: var(--marigold-300); }
 .footer__copy { font-size: 0.75rem; color: rgba(255, 248, 239, 0.36); }
+.footer__cta { align-self: center; }
 
 /* ── reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
@@ -1328,4 +1388,69 @@ body::after {
   background: linear-gradient(180deg, var(--cream-100), var(--cream-50));
   padding: 5rem 0 6rem;
   margin-top: 2rem;
+}
+
+/* ════════════════ BLOG MOBILE ════════════════ */
+@media (max-width: 640px) {
+  .blog-list-hero {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .blog-featured {
+    gap: 1.8rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .blog-featured__img {
+    border-radius: 1.2rem;
+  }
+  .blog-featured__title {
+    font-size: 1.65rem;
+  }
+
+  .blog-card {
+    border-radius: 1.2rem;
+  }
+  .blog-card__body {
+    padding: 1.2rem 1.3rem 1.5rem;
+  }
+
+  .post-hero {
+    height: 60vh;
+    min-height: 22rem;
+  }
+  .post-hero__content {
+    padding-bottom: 2rem;
+  }
+  .post-hero__title {
+    font-size: 1.8rem;
+  }
+  .post-hero__subtitle {
+    font-size: 1rem;
+  }
+  .post-hero__meta {
+    font-size: 0.72rem;
+  }
+
+  .post-body {
+    padding: 2.5rem 0 2rem;
+  }
+  .post-section__p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .post-author {
+    padding: 1.4rem 1.2rem;
+    gap: 1rem;
+  }
+
+  .post-cta {
+    padding: 2.5rem 1.5rem;
+    border-radius: 1.2rem;
+  }
+
+  .post-more {
+    padding: 3rem 0 4rem;
+  }
 }

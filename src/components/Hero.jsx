@@ -32,7 +32,7 @@ export default function Hero({ animate }) {
             Psychiatrická a psychoterapeutická ambulancia · Banská Bystrica
           </motion.p>
           <motion.h1 className="hero__headline" {...up(0.25)}>
-            Priestor<br />na <em>dýchanie</em>
+            Priestor<br />ku <em>stretnutiu</em>
           </motion.h1>
           <motion.p className="hero__tagline" {...up(0.45)}>
             O duševné zdravie dospelých sa staráme od roku 2013.

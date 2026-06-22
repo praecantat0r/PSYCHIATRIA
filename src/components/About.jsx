@@ -35,7 +35,7 @@ export default function About() {
           <Reveal>
             <p className="eyebrow">O ambulancii</p>
             <h2 className="h2">
-              Odborná starostlivosť<br /><em>s ľudskou tvárou</em>
+              Starostlivosť s rešpektom<br /><em>ku jedinečnosti.</em>
             </h2>
           </Reveal>
           <Reveal delay={0.12}>
@@ -46,8 +46,9 @@ export default function About() {
               prístup ku každému človeku.
             </p>
             <p className="about__text">
-              Veríme, že prostredie lieči. Preto je u nás viac tepla než chrómu
-              a viac času než zhonu.
+              Centrum u Velických pôsobí v Banskej Bystrici od roku 2013. Spája nás
+              spoločný záväzok: byť tu pre vás bez predsudkov, s odbornosťou
+              a s pochopením.
             </p>
           </Reveal>
           <Reveal delay={0.2}>

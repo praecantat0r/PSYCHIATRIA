@@ -106,7 +106,7 @@ export default function Header() {
                 style={{
                   borderBottom: '1px solid rgba(255,184,77,0.16)',
                   padding: '0.95rem 0',
-                  color: 'var(--porcelain)',
+                  color: 'var(--ink)',
                   textDecoration: 'none',
                   fontSize: '1rem',
                   display: 'block',

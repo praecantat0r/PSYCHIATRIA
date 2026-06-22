@@ -3,17 +3,8 @@ import Reveal from './Reveal.jsx'
 
 const VALUES = [
   {
-    title: 'Diskrétnosť',
-    text: 'Všetko, čo u nás zaznie, zostáva medzi nami. Súkromie pacienta je pre nás na prvom mieste.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Individuálny prístup',
-    text: 'Žiadne šablóny. Liečbu aj terapiu nastavujeme podľa konkrétneho človeka a jeho príbehu.',
+    title: 'Úcta k človeku',
+    text: 'Nevnímame pacienta cez diagnózu, ale cez príbeh, ktorý so sebou priniesol.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" />
@@ -21,8 +12,17 @@ const VALUES = [
     ),
   },
   {
-    title: 'Čas a pokoj',
-    text: 'Konzultácie bez zhonu. Každý dostane priestor povedať všetko, čo povedať potrebuje.',
+    title: 'Rešpekt',
+    text: 'Liečba vzniká vzájomnou dohodou. Váš názor a tempo sú pre nás rovnako dôležité ako odborné hľadisko.',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M17 8h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2v4l-4-4H9a2 2 0 0 1-2-2v-1" /><path d="M15 4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2v4l4-4h4a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Zaangažovanosť',
+    text: 'Vo vyhradenom čase sa pacientovi plne venujeme — bez zhonu, bez prerušení.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />
@@ -37,7 +37,7 @@ export default function Values() {
       <div className="container">
         <Reveal>
           <p className="eyebrow">Náš prístup</p>
-          <h2 className="h2">Na čom <em>nám záleží</em></h2>
+          <h2 className="h2">Hodnoty, na ktorých <em>nám záleží</em></h2>
         </Reveal>
 
         <div className="values__grid">

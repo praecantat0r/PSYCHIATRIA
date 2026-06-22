@@ -130,7 +130,7 @@ export default function BlogPost() {
             >
               <p className="eyebrow">Máte otázky?</p>
               <h2 className="h2">Kontaktujte <em>nás</em></h2>
-              <p style={{ color: 'var(--ink-soft)', fontWeight: 300, marginBottom: '2rem', lineHeight: 1.7 }}>
+              <p style={{ color: 'rgba(255, 248, 239, 0.65)', fontWeight: 300, marginBottom: '2rem', lineHeight: 1.7 }}>
                 Ak sa Vás téma tohto článku osobne dotýka alebo hľadáte odbornú pomoc, sme tu pre Vás.
               </p>
               <a href="/#kontakt" className="btn btn--solid">

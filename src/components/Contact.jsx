@@ -41,6 +41,7 @@ export default function Contact() {
         <Reveal>
           <p className="eyebrow eyebrow--accent">Kontakt</p>
           <h2 className="h2 h2--light">Napíšte <em>nám</em></h2>
+          <p className="contact__intro">Napíšte nám prosím Vaše problémy, pre ktoré vyhľadávate našu starostlivosť.</p>
         </Reveal>
 
         <div className="contact__layout">
@@ -72,6 +73,14 @@ export default function Contact() {
                 <input id="cf-name" type="text" name="name" placeholder="Ján Novák" required />
                 <ValidationError field="name" errors={state.errors} className="contact__field-error" />
               </div>
+              <div className="contact__field">
+                <label htmlFor="cf-phone">Telefónne číslo</label>
+                <input id="cf-phone" type="tel" name="phone" placeholder="+421 9XX XXX XXX" />
+                <ValidationError field="phone" errors={state.errors} className="contact__field-error" />
+              </div>
+            </div>
+
+            <div className="contact__form-row">
               <div className="contact__field">
                 <label htmlFor="cf-email">Email</label>
                 <input id="cf-email" type="email" name="email" placeholder="jan@email.sk" required />
