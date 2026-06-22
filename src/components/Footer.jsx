@@ -8,7 +8,7 @@ export default function Footer() {
         </div>
         <p className="footer__legal">
           PSYCHIATRIA &amp; PSYCHOTERAPIA s.r.o. · IČO: 47014113<br />
-          <a href="mailto:info@centrumuvelickych.sk">info@centrumuvelickych.sk</a>
+          <a href="mailto:psychiatriavelicki@gmail.com">psychiatriavelicki@gmail.com</a>
         </p>
         <p className="footer__copy">© {new Date().getFullYear()}</p>
       </div>

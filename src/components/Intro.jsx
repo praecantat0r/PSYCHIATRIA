@@ -95,7 +95,7 @@ export default function Intro({ onDone }) {
               </motion.span>
             </motion.h2>
             <motion.p className="intro__loc" variants={textReveal}>
-              Banská Bystrica · od 2013
+              Banská Bystrica · ambulancia od 1993
             </motion.p>
           </motion.div>
         </motion.div>

@@ -768,14 +768,12 @@ body::after {
   color: var(--marigold-300);
   margin-bottom: 1.1rem;
 }
-.contact__hours { width: 100%; border-collapse: collapse; font-weight: 300; font-size: 0.95rem; }
-.contact__hours td {
-  padding: 0.7rem 0;
-  border-bottom: 1px solid rgba(255, 184, 77, 0.14);
+.contact__hours-note {
+  font-weight: 300;
+  font-size: 0.95rem;
   color: rgba(255, 248, 239, 0.86);
+  line-height: 1.7;
 }
-.contact__hours td:last-child { text-align: right; color: var(--porcelain); }
-.contact__hours .is-closed td { color: rgba(255, 248, 239, 0.42); }
 
 .contact__map {
   border-radius: 1.8rem;

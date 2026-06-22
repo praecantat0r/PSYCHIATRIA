@@ -5,7 +5,7 @@ import Reveal from './Reveal.jsx'
 const reasons = [
   'Prihlásenie na liečbu',
   'Vybavovanie liekov',
-  'Odborné poradenstvo',
+  'Odhlásenie z termínu vyšetrenia',
 ]
 
 export default function Contact() {
@@ -45,24 +45,20 @@ export default function Contact() {
 
         <div className="contact__layout">
           <Reveal delay={0.1} className="contact__left">
-            <a href="mailto:info@centrumuvelickych.sk" className="contact__email">
-              info@centrumuvelickych.sk
+            <a href="mailto:psychiatriavelicki@gmail.com" className="contact__email">
+              psychiatriavelicki@gmail.com
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </a>
-            <p className="contact__phone">+421 48 415 6038 · +421 911 999 960</p>
             <p className="contact__address">Bernolákova 4138/14A, 974 05 Banská Bystrica</p>
           </Reveal>
 
           <Reveal delay={0.2} className="contact__right">
-            <p className="contact__hours-label">Ordinačné hodiny</p>
-            <table className="contact__hours">
-              <tbody>
-                <tr><td>Pondelok</td><td>7:30 – 12:00 &nbsp; 13:00 – 18:00</td></tr>
-                <tr><td>Ut – Štvrtok</td><td>7:30 – 12:00 &nbsp; 13:00 – 16:00</td></tr>
-                <tr><td>Piatok</td><td>7:30 – 12:00</td></tr>
-                <tr className="is-closed"><td>So – Ne</td><td>zatvorené</td></tr>
-              </tbody>
-            </table>
+            <p className="contact__hours-label">Termíny</p>
+            <p className="contact__hours-note">
+              Objednávame na vopred určený termín po dohode s našimi sestričkami.
+              Kontaktný formulár môžete využiť aj na vybavenie liekov alebo odhlásenie
+              a preobjednanie termínu.
+            </p>
           </Reveal>
         </div>
 

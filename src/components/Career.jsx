@@ -7,10 +7,12 @@ export default function Career() {
 
         <Reveal className="career__card career__card--notice">
           <p className="eyebrow eyebrow--dark">Aktuálne</p>
-          <h3>Momentálne nepreberáme nových pacientov</h3>
+          <h3>Nových pacientov prijímame v obmedzenom počte</h3>
           <p>
-            Kapacita ambulancie je naplnená. Existujúcich pacientov prosíme,
-            aby nás kontaktovali emailom – ozveme sa čo najskôr.
+            Naša ambulancia je kapacitne takmer obsadená. Nových dospelých pacientov
+            prijímame vo veľmi obmedzenom počte. Pokiaľ máte záujem napriek
+            obmedzeniam, kontaktujte nás cez formulár nižšie – popíšte svoje
+            problémy, pre ktoré nás chcete vyhľadať, a ozveme sa Vám.
           </p>
         </Reveal>
 

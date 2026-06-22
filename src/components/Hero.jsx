@@ -18,7 +18,7 @@ export default function Hero({ animate }) {
     <section id="hero" className="hero" ref={ref}>
       <motion.div className="hero__photo" style={{ y }}>
         <img
-          src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1800&q=80"
+          src="/images/ambulance_interior.jpeg"
           alt="Teplý, presvetlený interiér ambulancie"
           loading="eager"
           fetchPriority="high"

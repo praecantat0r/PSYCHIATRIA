@@ -9,14 +9,14 @@ export default function About() {
         <Reveal className="about__photos">
           <div className="about__photo-main">
             <img
-              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80"
-              alt="Útulný interiér ambulancie"
+              src="/images/margareta_vlado.jpeg"
+              alt="MUDr. Margaréta Velická a MUDr. Vladimír Velický"
             />
           </div>
           <div className="about__photo-float">
             <img
-              src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=600&q=80"
-              alt="Detail pokojného interiéru"
+              src="/images/location_photo.jpeg"
+              alt="Ambulancia Centrum u Velických"
             />
           </div>
           <motion.div
@@ -26,8 +26,8 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ type: 'spring', stiffness: 200, damping: 16, delay: 0.4 }}
           >
-            <span className="about__badge-year">2013</span>
-            <span className="about__badge-sub">Banská Bystrica</span>
+            <span className="about__badge-year">1993</span>
+            <span className="about__badge-sub">ambulancia</span>
           </motion.div>
         </Reveal>
 
@@ -40,9 +40,10 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.12}>
             <p className="about__text">
-              Centrum u Velických pôsobí v Banskej Bystrici od roku 2013. Venujeme sa
-              psychiatrickej diagnostike, liečbe a psychoterapii dospelých – s dôrazom
-              na diskrétnosť, pokoj a individuálny prístup ku každému človeku.
+              Centrum u Velických pôsobí v Banskej Bystrici od roku 2013. Ako ambulancia
+              fungujeme od roku 1993. Venujeme sa psychiatrickej diagnostike, liečbe
+              a psychoterapii dospelých – s dôrazom na diskrétnosť, pokoj a individuálny
+              prístup ku každému človeku.
             </p>
             <p className="about__text">
               Veríme, že prostredie lieči. Preto je u nás viac tepla než chrómu

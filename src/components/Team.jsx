@@ -5,22 +5,22 @@ const TEAM = [
   {
     name: 'MUDr. Vladimír Velický',
     role: 'Psychiater',
-    img: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80',
+    img: '/images/vladimir.jpeg',
   },
   {
     name: 'MUDr. Margaréta Velická',
     role: 'Psychiatrička',
-    img: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=80',
+    img: '/images/margareta.jpeg',
   },
   {
     name: 'Alena Sigetyová',
     role: 'Zdravotná sestra',
-    img: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80',
+    img: '/images/alenka.jpeg',
   },
   {
     name: 'Ruženka Tomečková',
     role: 'Zdravotná sestra',
-    img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
+    img: '/images/ruzenka.jpeg',
   },
 ]
 
