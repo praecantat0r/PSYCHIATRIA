@@ -944,6 +944,22 @@ body::after {
   transform: translateY(-2px);
 }
 
+.contact__mailto-hint {
+  display: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .contact__mailto-hint {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.7;
+  }
+  .contact__mailto-hint strong {
+    color: rgba(255,255,255,0.7);
+  }
+}
+
 /* ════════════════ QUOTE ════════════════ */
 .quote-section {
   position: relative;

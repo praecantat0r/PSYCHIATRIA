@@ -133,6 +133,14 @@ export default function Contact() {
               Odoslať správu
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </button>
+            <p className="contact__mailto-hint">
+              Po kliknutí sa otvorí Váš emailový program s vyplnenou správou – stačí ju odoslať.<br /><br />
+              <strong>Ak sa nič neotvorilo alebo chcete používať Gmail:</strong><br />
+              1. Otvorte <strong>gmail.com</strong> v Chrome.<br />
+              2. V adresnom riadku vpravo uvidíte malú <strong>ikonu (◇)</strong> – kliknite na ňu.<br />
+              3. Vyberte <strong>„Povoliť"</strong> a potvrďte.<br />
+              Od teraz bude každý emailový odkaz otvárať Gmail automaticky.
+            </p>
           </form>
         </Reveal>
 

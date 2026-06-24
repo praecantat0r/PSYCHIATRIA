@@ -7,8 +7,8 @@ export const blogs = [
     date: '2023-09-12',
     author: 'MUDr. Vladimír Velický',
     readTime: '12 min',
-    image: 'https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=1200&q=80',
-    imageAlt: 'Pokojné svetlo prechádzajúce cez okno',
+    image: '/images/blog_1.jpeg',
+    imageAlt: 'Hmlistá krajina so stromom',
     excerpt:
       'Depresia je závažné ochorenie, ktoré postihuje v priebehu života asi 15 percent ľudí. Prinášame odpovede na najčastejšie otázky, ktoré nám pacienti kladú — čo je depresia, ako ju spoznať a ako sa lieči.',
     sections: [
@@ -72,8 +72,8 @@ export const blogs = [
     date: '2023-06-05',
     author: 'MUDr. Vladimír Velický',
     readTime: '4 min',
-    image: 'https://images.unsplash.com/photo-1476231682828-37e571bc172f?auto=format&fit=crop&w=1200&q=80',
-    imageAlt: 'Pokojná prírodná krajina',
+    image: '/images/blog_2.jpeg',
+    imageAlt: 'Strom v zime',
     excerpt:
       'Kde je hranica medzi prirodzenou reakciou na životnú situáciu a duševnou poruchou? Odpoveď sa hľadá len v dialógu s odborníkom — a my Vám ho ponúkame.',
     sections: [
@@ -104,8 +104,8 @@ export const blogs = [
     date: '2023-11-20',
     author: 'MUDr. Vladimír Velický',
     readTime: '7 min',
-    image: 'https://images.unsplash.com/photo-1541199249251-f713e6145474?auto=format&fit=crop&w=1200&q=80',
-    imageAlt: 'Pokojná meditačná scéna',
+    image: '/images/blog_3.jpeg',
+    imageAlt: 'Lesná cesta',
     excerpt:
       'Úzkosť je prirodzený duševný a telesný stav. Vzniká vtedy, keď zastavujeme naše emócie. Mnohí ľudia takto žijú roky „pridusený" život — a postupne sa dopracujú k niektorej z úzkostných porúch.',
     sections: [
@@ -146,8 +146,8 @@ export const blogs = [
     date: '2024-02-08',
     author: 'MUDr. Vladimír Velický',
     readTime: '5 min',
-    image: 'https://images.unsplash.com/photo-1489533119213-66a5cd877091?auto=format&fit=crop&w=1200&q=80',
-    imageAlt: 'Mladý človek v zamyslení',
+    image: '/images/blog_1.jpeg',
+    imageAlt: 'Hmlistá krajina so stromom',
     excerpt:
       'Schizofrénia sa najčastejšie prejavuje v mladom veku a jej začiatok býva nenápadný. Písali sme tento text pre mladých ľudí, ktorých sa to najviac týka — a aj pre ich rodičov.',
     sections: [
@@ -186,8 +186,8 @@ export const blogs = [
     date: '2024-04-03',
     author: 'MUDr. Margaréta Velická',
     readTime: '9 min',
-    image: 'https://images.unsplash.com/photo-1516726817505-f5ed825624d8?auto=format&fit=crop&w=1200&q=80',
-    imageAlt: 'Dvaja ľudia v rozhovore',
+    image: '/images/blog_3.jpeg',
+    imageAlt: 'Lesná cesta',
     excerpt:
       'Každý človek prichádza na svet nielen so svojimi povahovými črtami, ale aj do určitého rodinného prostredia. V tomto prostredí si vytvárame vzorce, ktoré si niekedy automaticky navodzujeme — a opakujeme celý život.',
     sections: [

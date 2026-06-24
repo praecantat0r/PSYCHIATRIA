@@ -8,6 +8,8 @@ const PHOTOS = [
   ['/images/location_photo.jpeg', 'Naša ambulancia', 'tall'],
   ['/images/margareta_vlado.jpeg', 'MUDr. Margaréta a Vladimír Velickí', ''],
   ['/images/alenka.jpeg', 'Alena Sigetyová', ''],
+  ['/images/conference_1.jpeg', 'MUDr. Margaréta Velická – EAPM 2026, Florencia', ''],
+  ['/images/conference_2.jpeg', 'Naše lekárky na konferencii', ''],
 ]
 
 export default function Gallery() {
