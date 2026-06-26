@@ -1,5 +1,5 @@
 const ITEMS = [
-  'Psychiatria', 'Psychoterapia', 'Od roku 2013', 'Banská Bystrica',
+  'Psychiatria', 'Psychoterapia', 'Od roku 1993', 'Banská Bystrica',
   'Diskrétnosť', 'Individuálny prístup',
 ]
 

@@ -35,7 +35,7 @@ export default function Hero({ animate }) {
             Priestor<br />ku <em>stretnutiu</em>
           </motion.h1>
           <motion.p className="hero__tagline" {...up(0.45)}>
-            O duševné zdravie dospelých sa staráme od roku 2013.
+            O duševné zdravie dospelých sa staráme od roku 1993.
           </motion.p>
           <motion.div {...up(0.6)}>
             <a href="#kontakt" className="btn btn--accent hero__cta">
@@ -45,21 +45,6 @@ export default function Hero({ animate }) {
           </motion.div>
         </div>
       </motion.div>
-
-      <motion.a
-        href="#o-nas"
-        className="hero__scroll"
-        initial={{ opacity: 0 }}
-        animate={animate ? { opacity: 1 } : {}}
-        transition={{ delay: 1.3, duration: 0.8 }}
-      >
-        <span>scroll</span>
-        <motion.span
-          className="hero__scroll-line"
-          animate={{ scaleY: [0, 1, 0], originY: ['0%', '0%', '100%'] }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-        />
-      </motion.a>
     </section>
   )
 }

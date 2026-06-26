@@ -46,7 +46,7 @@ export default function BlogList() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
-              Blog &amp; <em>Articles</em>
+              Blog
             </motion.h1>
             <motion.p
               className="blog-list-hero__sub"
@@ -54,7 +54,7 @@ export default function BlogList() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.25 }}
             >
-              Odborné články o duševnom zdraví od lekárov Centra u Velických
+              Odborné články o duševnom zdraví.
             </motion.p>
           </div>
         </div>
