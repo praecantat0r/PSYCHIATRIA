@@ -6,7 +6,7 @@ const PHOTOS = [
   ['/images/priestor_2.webp', 'Priestor ambulancie', ''],
   ['/images/priestor_3.webp', 'Priestor ambulancie', ''],
   ['/images/location_photo.webp', 'Naša ambulancia', 'tall'],
-  ['/images/priestor_5.jpeg', 'Priestor ambulancie', ''],
+  ['/images/priestor_5.JPEG', 'Priestor ambulancie', ''],
   ['/images/priestor_4.webp', 'Priestor ambulancie', ''],
 ]
 
