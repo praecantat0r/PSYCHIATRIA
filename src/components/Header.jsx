@@ -39,7 +39,7 @@ export default function Header() {
   }
 
   return (
-    <header className={`header ${solid || open ? 'header--solid' : ''}`}>
+    <header className={`header ${solid || open || onBlog ? 'header--solid' : ''}`}>
       <div className="header__inner">
         <Link to="/" className="header__brand" onClick={() => setOpen(false)}>
           <span className="header__brand-text">
