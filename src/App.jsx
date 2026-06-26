@@ -66,10 +66,8 @@ export default function App() {
       <ScrollReset />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Suspense fallback={null}>
-          <Route path="/blog" element={<BlogList />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-        </Suspense>
+        <Route path="/blog" element={<Suspense fallback={null}><BlogList /></Suspense>} />
+        <Route path="/blog/:slug" element={<Suspense fallback={null}><BlogPost /></Suspense>} />
       </Routes>
     </BrowserRouter>
   )
