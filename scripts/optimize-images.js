@@ -20,7 +20,7 @@ async function convertDir(dir) {
     const src = join(dir, name)
     const out = join(dir, basename(name, ext) + '.webp')
     try {
-      await sharp(src).webp({ quality: QUALITY }).toFile(out)
+      await sharp(src).rotate().webp({ quality: QUALITY }).toFile(out)
       console.log(`✓  ${name}`)
     } catch (e) {
       console.error(`✗  ${name}: ${e.message}`)
