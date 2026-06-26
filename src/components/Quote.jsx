@@ -9,7 +9,7 @@ export default function Quote() {
   return (
     <section className="quote-section" ref={ref}>
       <motion.div className="quote-section__bg" style={{ y }}>
-        <img src="/citat.jpg" alt="Lesná cesta so slnečnými lúčmi" loading="lazy" />
+        <img src="/citat.webp" alt="Lesná cesta so slnečnými lúčmi" loading="lazy" />
       </motion.div>
       <div className="quote-section__overlay" />
       <div className="container quote-section__content">

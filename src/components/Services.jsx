@@ -16,7 +16,7 @@ export default function Services() {
 
         <Reveal className="services__photo">
           <img
-            src="/images/comu_sa_venujeme.jpeg"
+            src="/images/comu_sa_venujeme.webp"
             alt="Čomu sa venujeme v ambulancii"
             loading="lazy"
           />

@@ -2,12 +2,12 @@ import { motion } from 'framer-motion'
 import Reveal from './Reveal.jsx'
 
 const PHOTOS = [
-  ['/images/ambulance_interior.jpeg', 'Interiér ambulancie', 'tall'],
-  ['/images/priestor_2.jpeg', 'Priestor ambulancie', ''],
-  ['/images/priestor_3.jpeg', 'Priestor ambulancie', ''],
-  ['/images/location_photo.jpeg', 'Naša ambulancia', 'tall'],
-  ['/images/priestor_1.jpeg', 'Priestor ambulancie', ''],
-  ['/images/priestor_4.jpeg', 'Priestor ambulancie', ''],
+  ['/images/ambulance_interior.webp', 'Interiér ambulancie', 'tall'],
+  ['/images/priestor_2.webp', 'Priestor ambulancie', ''],
+  ['/images/priestor_3.webp', 'Priestor ambulancie', ''],
+  ['/images/location_photo.webp', 'Naša ambulancia', 'tall'],
+  ['/images/priestor_1.webp', 'Priestor ambulancie', ''],
+  ['/images/priestor_4.webp', 'Priestor ambulancie', ''],
 ]
 
 export default function Gallery() {

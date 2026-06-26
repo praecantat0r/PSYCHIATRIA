@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Intro from './components/Intro.jsx'
 import Header from './components/Header.jsx'
@@ -13,8 +13,9 @@ import Career from './components/Career.jsx'
 import Quote from './components/Quote.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
-import BlogList from './pages/BlogList.jsx'
-import BlogPost from './pages/BlogPost.jsx'
+
+const BlogList = lazy(() => import('./pages/BlogList.jsx'))
+const BlogPost = lazy(() => import('./pages/BlogPost.jsx'))
 
 function ScrollReset() {
   const location = useLocation()
@@ -65,8 +66,10 @@ export default function App() {
       <ScrollReset />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/blog" element={<BlogList />} />
-        <Route path="/blog/:slug" element={<BlogPost />} />
+        <Suspense fallback={null}>
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+        </Suspense>
       </Routes>
     </BrowserRouter>
   )

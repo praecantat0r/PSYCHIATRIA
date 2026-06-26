@@ -33,7 +33,11 @@ export default function Contact() {
       ].join('\n')
     )
 
-    window.location.href = `mailto:psychiatriavelicki@gmail.com?subject=${subject}&body=${body}`
+    window.open(
+      `https://mail.google.com/mail/?view=cm&to=psychiatriavelicki@gmail.com&su=${subject}&body=${body}`,
+      '_blank',
+      'noopener,noreferrer'
+    )
     setSent(true)
   }
 
@@ -48,8 +52,8 @@ export default function Contact() {
           <Reveal delay={0.1}>
             <div className="contact__success">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              <h3>Emailový klient otvorený</h3>
-              <p>Správa je pripravená vo Vašom emailovom klientovi. Stačí ju odoslať.</p>
+              <h3>Gmail otvorený</h3>
+              <p>Správa je pripravená v Gmaile. Stačí ju odoslať.</p>
             </div>
           </Reveal>
         </div>
@@ -134,12 +138,7 @@ export default function Contact() {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </button>
             <p className="contact__mailto-hint">
-              Po kliknutí sa otvorí Váš emailový program s vyplnenou správou – stačí ju odoslať.<br /><br />
-              <strong>Ak sa nič neotvorilo alebo chcete používať Gmail:</strong><br />
-              1. Otvorte <strong>gmail.com</strong> v Chrome.<br />
-              2. V adresnom riadku vpravo uvidíte malú <strong>ikonu (◇)</strong> – kliknite na ňu.<br />
-              3. Vyberte <strong>„Povoliť"</strong> a potvrďte.<br />
-              Od teraz bude každý emailový odkaz otvárať Gmail automaticky.
+              Po kliknutí sa otvorí Gmail v novom okne s vyplnenou správou – stačí ju odoslať.
             </p>
           </form>
         </Reveal>

@@ -5,22 +5,22 @@ const TEAM = [
   {
     name: 'MUDr. Vladimír Velický',
     role: 'Psychiater',
-    img: '/images/vladimir.jpeg',
+    img: '/images/vladimir.webp',
   },
   {
     name: 'MUDr. Margaréta Velická',
     role: 'Psychiatrička',
-    img: '/images/margareta.jpeg',
+    img: '/images/margareta.webp',
   },
   {
     name: 'Alena Sigetyová',
     role: 'Zdravotná sestra',
-    img: '/images/alenka.jpeg',
+    img: '/images/alenka.webp',
   },
   {
     name: 'Ruženka Tomečková',
     role: 'Zdravotná sestra',
-    img: '/images/ruzenka.jpeg',
+    img: '/images/ruzenka.webp',
   },
 ]
 

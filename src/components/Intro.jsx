@@ -4,8 +4,8 @@ import { AnimatePresence, motion } from 'framer-motion'
 const ease = [0.22, 1, 0.36, 1]
 
 const textReveal = {
-  hidden: { opacity: 0, y: 18, filter: 'blur(10px)' },
-  show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.8, ease } },
+  hidden: { opacity: 0, y: 18 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease } },
 }
 
 const titleLines = (
@@ -74,8 +74,8 @@ export default function Intro({ onDone }) {
             <motion.h2
               className="intro__title"
               variants={{
-                hidden: { opacity: 0, y: 28, scale: 0.96, filter: 'blur(18px)' },
-                show: { opacity: 1, y: 0, scale: 1, filter: 'blur(0px)', transition: { duration: 1.05, ease } },
+                hidden: { opacity: 0, y: 28, scale: 0.96 },
+                show: { opacity: 1, y: 0, scale: 1, transition: { duration: 1.05, ease } },
               }}
             >
               <span className="intro__title-outline">{titleLines}</span>

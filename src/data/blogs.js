@@ -7,7 +7,7 @@ export const blogs = [
     date: '2023-09-12',
     author: 'MUDr. Vladimír Velický',
     readTime: '12 min',
-    image: '/images/blog_1.jpeg',
+    image: '/images/blog_1.webp',
     imageAlt: 'Hmlistá krajina so stromom',
     excerpt:
       'Depresia je závažné ochorenie, ktoré postihuje v priebehu života asi 15 percent ľudí. Prinášame odpovede na najčastejšie otázky, ktoré nám pacienti kladú — čo je depresia, ako ju spoznať a ako sa lieči.',
@@ -72,7 +72,7 @@ export const blogs = [
     date: '2023-06-05',
     author: 'MUDr. Vladimír Velický',
     readTime: '4 min',
-    image: '/images/blog_2.jpeg',
+    image: '/images/blog_2.webp',
     imageAlt: 'Strom v zime',
     excerpt:
       'Kde je hranica medzi prirodzenou reakciou na životnú situáciu a duševnou poruchou? Odpoveď sa hľadá len v dialógu s odborníkom — a my Vám ho ponúkame.',
@@ -104,7 +104,7 @@ export const blogs = [
     date: '2023-11-20',
     author: 'MUDr. Vladimír Velický',
     readTime: '7 min',
-    image: '/images/blog_3.jpeg',
+    image: '/images/blog_3.webp',
     imageAlt: 'Lesná cesta',
     excerpt:
       'Úzkosť je prirodzený duševný a telesný stav. Vzniká vtedy, keď zastavujeme naše emócie. Mnohí ľudia takto žijú roky „pridusený" život — a postupne sa dopracujú k niektorej z úzkostných porúch.',
@@ -146,7 +146,7 @@ export const blogs = [
     date: '2024-02-08',
     author: 'MUDr. Vladimír Velický',
     readTime: '5 min',
-    image: '/images/blog_1.jpeg',
+    image: '/images/blog_1.webp',
     imageAlt: 'Hmlistá krajina so stromom',
     excerpt:
       'Schizofrénia sa najčastejšie prejavuje v mladom veku a jej začiatok býva nenápadný. Písali sme tento text pre mladých ľudí, ktorých sa to najviac týka — a aj pre ich rodičov.',
@@ -186,7 +186,7 @@ export const blogs = [
     date: '2024-04-03',
     author: 'MUDr. Margaréta Velická',
     readTime: '9 min',
-    image: '/images/blog_3.jpeg',
+    image: '/images/blog_3.webp',
     imageAlt: 'Lesná cesta',
     excerpt:
       'Každý človek prichádza na svet nielen so svojimi povahovými črtami, ale aj do určitého rodinného prostredia. V tomto prostredí si vytvárame vzorce, ktoré si niekedy automaticky navodzujeme — a opakujeme celý život.',

@@ -22,7 +22,7 @@ const VALUES = [
   },
   {
     title: 'Zaangažovanosť',
-    text: 'Vo vyhradenom čase sa pacientovi plne venujeme: bez zhonu, bez prerušení.',
+    text: 'Vo vyhradenom čase sa pacientovi plne venujeme, bez zhonu, bez prerušení.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />

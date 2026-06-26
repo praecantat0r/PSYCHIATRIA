@@ -9,13 +9,13 @@ export default function About() {
         <Reveal className="about__photos">
           <div className="about__photo-main">
             <img
-              src="/images/margareta_vlado.jpeg"
+              src="/images/margareta_vlado.webp"
               alt="MUDr. Margaréta Velická a MUDr. Vladimír Velický"
             />
           </div>
           <div className="about__photo-float">
             <img
-              src="/images/location_photo.jpeg"
+              src="/images/location_photo.webp"
               alt="Ambulancia Centrum u Velických"
             />
           </div>
