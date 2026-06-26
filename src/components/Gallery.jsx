@@ -3,13 +3,11 @@ import Reveal from './Reveal.jsx'
 
 const PHOTOS = [
   ['/images/ambulance_interior.jpeg', 'Interiér ambulancie', 'tall'],
-  ['/images/starostlivost_s_respektom.jpeg', 'Starostlivosť s rešpektom', ''],
-  ['/images/comu_sa_venujeme.jpeg', 'Čomu sa venujeme', ''],
+  ['/images/priestor_2.jpeg', 'Priestor ambulancie', ''],
+  ['/images/priestor_3.jpeg', 'Priestor ambulancie', ''],
   ['/images/location_photo.jpeg', 'Naša ambulancia', 'tall'],
-  ['/images/margareta_vlado.jpeg', 'MUDr. Margaréta a Vladimír Velickí', ''],
-  ['/images/alenka.jpeg', 'Alena Sigetyová', ''],
-  ['/images/conference_1.jpeg', 'MUDr. Margaréta Velická – EAPM 2026, Florencia', ''],
-  ['/images/conference_2.jpeg', 'Naše lekárky na konferencii', ''],
+  ['/images/priestor_1.jpeg', 'Priestor ambulancie', ''],
+  ['/images/priestor_4.jpeg', 'Priestor ambulancie', ''],
 ]
 
 export default function Gallery() {
