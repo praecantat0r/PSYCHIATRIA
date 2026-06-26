@@ -42,7 +42,6 @@ export default function Header() {
     <header className={`header ${solid || open ? 'header--solid' : ''}`}>
       <div className="header__inner">
         <Link to="/" className="header__brand" onClick={() => setOpen(false)}>
-          <Logo />
           <span className="header__brand-text">
             <span className="header__name">Centrum u Velických</span>
             <span className="header__tag">Psychiatria &amp; Psychoterapia</span>

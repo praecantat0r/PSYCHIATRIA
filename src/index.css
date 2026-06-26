@@ -195,12 +195,12 @@ body::after {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(254, 247, 237, 0.82);
-  backdrop-filter: blur(12px);
+  background: transparent;
   transition: background 350ms, box-shadow 350ms;
 }
 .header--solid {
   background: rgba(254, 247, 237, 0.97);
+  backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 rgba(158, 64, 8, 0.12);
 }
 .header__inner {
@@ -226,16 +226,24 @@ body::after {
   display: block;
   font-family: var(--serif);
   font-size: 1.05rem;
-  color: var(--ink);
+  color: rgba(255, 255, 255, 0.9);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: color 350ms;
+}
+.header--solid .header__name {
+  color: var(--ink);
 }
 .header__tag {
   display: block;
   font-size: 0.58rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 350ms;
+}
+.header--solid .header__tag {
   color: var(--ink-soft);
 }
 
@@ -244,9 +252,13 @@ body::after {
 .header__link {
   font-size: 0.875rem;
   font-weight: 400;
-  color: var(--ink);
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   position: relative;
+  transition: color 350ms;
+}
+.header--solid .header__link {
+  color: var(--ink);
 }
 .header__link::after {
   content: '';
@@ -279,8 +291,11 @@ body::after {
 .header__burger span {
   display: block;
   width: 20px; height: 1.5px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: transform 300ms var(--ease), opacity 300ms, background 350ms;
+}
+.header--solid .header__burger span {
   background: var(--ink);
-  transition: transform 300ms var(--ease), opacity 300ms;
 }
 .header__burger.is-open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
 .header__burger.is-open span:nth-child(2) { opacity: 0; }

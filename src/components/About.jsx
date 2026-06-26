@@ -40,13 +40,12 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.12}>
             <p className="about__text">
-              Centrum u Velických pôsobí v Banskej Bystrici od roku 1993. Ako ambulancia
-              fungujeme od roku 1993. Venujeme sa psychiatrickej diagnostike, liečbe
+              Centrum u Velických pôsobí v Banskej Bystrici od roku 1993. Venujeme sa psychiatrickej diagnostike, liečbe
               a psychoterapii dospelých, s dôrazom na diskrétnosť, pokoj a individuálny
               prístup ku každému človeku.
             </p>
             <p className="about__text">
-              Centrum u Velických pôsobí v Banskej Bystrici od roku 1993. Spája nás
+              Spája nás
               spoločný záväzok: byť tu pre vás bez predsudkov, s odbornosťou
               a s pochopením.
             </p>
