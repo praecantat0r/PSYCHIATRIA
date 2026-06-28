@@ -13,7 +13,7 @@ const TEAM = [
     img: '/images/margareta.webp',
   },
   {
-    name: 'Alena Sigetyová',
+    name: 'Alenka Sigetyová',
     role: 'Zdravotná sestra',
     img: '/images/alenka.webp',
   },
