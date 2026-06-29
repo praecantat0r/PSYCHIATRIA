@@ -146,8 +146,8 @@ export const blogs = [
     date: '2024-02-08',
     author: 'MUDr. Vladimír Velický',
     readTime: '5 min',
-    image: '/images/blog_1.webp',
-    imageAlt: 'Hmlistá krajina so stromom',
+    image: '/images/schyzofrenia.jpg',
+    imageAlt: 'Púpava s kvapkami rosy',
     excerpt:
       'Schizofrénia sa najčastejšie prejavuje v mladom veku a jej začiatok býva nenápadný. Písali sme tento text pre mladých ľudí, ktorých sa to najviac týka — a aj pre ich rodičov.',
     sections: [
@@ -179,6 +179,43 @@ export const blogs = [
   },
 
   {
+    slug: 'ako-vznikaju-konflikty',
+    title: 'Ako vznikajú konflikty',
+    subtitle: 'Keď minulosť formuje naše vzťahy',
+    category: 'Vzťahy',
+    date: '2024-06-10',
+    author: 'MUDr. Vladimír Velický',
+    readTime: '4 min',
+    image: '/images/konflikty.jpg',
+    imageAlt: 'Konflikty vo vzťahoch',
+    excerpt:
+      'Mnohí moji pacienti prichádzajú na vyšetrenie po tom, čo konflikty, v ktorých sa dlhodobo nachádzajú, vyčerpajú limity ich schopnosti znášať záťaž. Najtažšie zvládame konflikty, ktoré súvisia s našimi skúsenosťami z minulosti.',
+    sections: [
+      {
+        heading: 'Dlhodobé konflikty',
+        paragraphs: [
+          'Mnohí moji pacienti prichádzajú na vyšetrenie po tom, čo konflikty, v ktorých sa dlhodobo nachádzajú, vyčerpajú limity ich schopnosti znášať záťaž. Takéto dlhodobé konflikty vznikajú často v pracovných alebo rodinných vzťahoch. Najtažšie zvládame konflikty, ktoré súvisia s našimi skúsenosťami z minulosti.',
+        ],
+      },
+      {
+        heading: 'Skúsenosti z minulosti',
+        paragraphs: [
+          'Ak sme nedostávali dostatočné potvrdenie od rodičov našej hodnoty, začneme vnímať neustálu kritiku svojho nadriadeného alebo partnera ako zraňovanie.',
+          'Ak v detstve sme mali nedostatok láskyplnej prítomnosti rodičov, môžeme vnímať nezáujem okolia v práci alebo v rodinných vzťahoch ako bolestivú opustenosť.',
+          'Ak sme vyrastali v detstve, kde jeden z rodičov mal prísne požiadavky, môžeme mať celý život vysoké nároky na seba aj na okolie a dostávať sa s tým do opakovaných konfliktov a pocitov nedorozumenia.',
+        ],
+      },
+      {
+        heading: 'Cesta k vnútornej spokojnosti',
+        paragraphs: [
+          'Je mnoho podôb, ako miesto vzťahovej podpory sa ocitáme v napätí, neporozumení, potrebe opustiť takúto situáciu.',
+          'Ak to nedokážeme zrealizovať pre nejaké vnútorné alebo vonkajšie prekážky, nastupujú príznaky vyplývajúce z dlhodobého stresu. Spoznanie týchto súvislostí nám môže pomôcť k vykročeniu do života, v ktorom dokážeme od okolia prijímať podporu a nájsť vnútornú spokojnosť.',
+        ],
+      },
+    ],
+  },
+
+  {
     slug: 'preco-v-zivote-narazam',
     title: 'Prečo v živote vo vzťahoch narážam?',
     subtitle: 'Vnútorné konflikty, ktoré sa opakujú celý život',
@@ -186,8 +223,8 @@ export const blogs = [
     date: '2024-04-03',
     author: 'MUDr. Margaréta Velická',
     readTime: '9 min',
-    image: '/images/blog_3.webp',
-    imageAlt: 'Lesná cesta',
+    image: '/images/vztahy.jpg',
+    imageAlt: 'Vzťahy',
     excerpt:
       'Každý človek prichádza na svet nielen so svojimi povahovými črtami, ale aj do určitého rodinného prostredia. V tomto prostredí si vytvárame vzorce, ktoré si niekedy automaticky navodzujeme — a opakujeme celý život.',
     sections: [
