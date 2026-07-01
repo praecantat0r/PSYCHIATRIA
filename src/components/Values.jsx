@@ -13,7 +13,7 @@ const VALUES = [
   },
   {
     title: 'Rešpekt',
-    text: 'Liečba vzniká vzájomnou dohodou. Váš názor a tempo sú pre nás rovnako dôležité ako odborné hľadisko.',
+    text: 'Liečba vzniká vzájomnou dohodou. Váš názor a váš pohľad sú pre nás rovnako dôležité ako odborné hľadisko.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M17 8h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2v4l-4-4H9a2 2 0 0 1-2-2v-1" /><path d="M15 4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2v4l4-4h4a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
@@ -22,7 +22,7 @@ const VALUES = [
   },
   {
     title: 'Zaangažovanosť',
-    text: 'Vo vyhradenom čase sa pacientovi plne venujeme, bez zhonu, bez prerušení.',
+    text: 'Vo vyhradenom čase sa vám plne venujeme, bez zhonu, bez prerušení.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />

@@ -7,6 +7,33 @@ const reasons = [
   'Odhlásenie z termínu vyšetrenia',
 ]
 
+const GMAIL_IOS_APP_STORE_URL = 'https://apps.apple.com/app/id422689480'
+const GMAIL_ANDROID_PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.google.android.gm'
+
+// Opens a custom URL scheme and falls back to `fallbackUrl` if the app
+// doesn't take over the page within `timeout` ms (iOS has no native
+// equivalent of Android's `S.browser_fallback_url` intent extra).
+function openAppWithFallback(appUrl, fallbackUrl, timeout = 1500) {
+  let fellBack = false
+
+  const onVisibilityChange = () => {
+    if (document.hidden) {
+      fellBack = true
+      document.removeEventListener('visibilitychange', onVisibilityChange)
+    }
+  }
+  document.addEventListener('visibilitychange', onVisibilityChange)
+
+  window.location.href = appUrl
+
+  setTimeout(() => {
+    document.removeEventListener('visibilitychange', onVisibilityChange)
+    if (!fellBack && !document.hidden) {
+      window.location.href = fallbackUrl
+    }
+  }, timeout)
+}
+
 export default function Contact() {
   const [fields, setFields] = useState({ name: '', phone: '', email: '', message: '' })
   const [reason, setReason] = useState('')
@@ -33,11 +60,21 @@ export default function Contact() {
       ].join('\n')
     )
 
-    window.open(
-      `https://mail.google.com/mail/?view=cm&to=psychiatriavelicki@gmail.com&su=${subject}&body=${body}`,
-      '_blank',
-      'noopener,noreferrer'
-    )
+    const to = 'psychiatriavelicki@gmail.com'
+    const webUrl = `https://mail.google.com/mail/?view=cm&to=${to}&su=${subject}&body=${body}`
+    const ua = navigator.userAgent
+    const isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream
+    const isAndroid = /Android/.test(ua)
+
+    if (isIOS) {
+      const appUrl = `googlegmail:///co?to=${to}&subject=${subject}&body=${body}`
+      openAppWithFallback(appUrl, GMAIL_IOS_APP_STORE_URL)
+    } else if (isAndroid) {
+      const appUrl = `intent://co?to=${to}&subject=${subject}&body=${body}#Intent;scheme=googlegmail;package=com.google.android.gm;S.browser_fallback_url=${encodeURIComponent(GMAIL_ANDROID_PLAY_STORE_URL)};end`
+      window.location.href = appUrl
+    } else {
+      window.open(webUrl, '_blank', 'noopener,noreferrer')
+    }
     setSent(true)
   }
 
